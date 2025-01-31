@@ -1,0 +1,165 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Smooth scrolling behavior */
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/ash-original-monogram-logo-design-260nw-1667809723.jpg" class="logo" alt="Logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio-section">Portfolio</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Ashutosh</span></h1>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/Screenshot 2025-01-30 035220.png" alt="About Me">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I'm Ashutosh Singh Thakur, a self-motivated project perfectionist with steady pacing and clear communication. Skilled in various programming languages and Web Development. Creative professional in visual communication, known for incorporating artistic elements into projects. Skilled in Figma, Typography, and design work. Proficient in conducting efficiency and design tests and implementing changes. Excel at time management, teamwork, and adaptability, ensuring successful project execution from concept to completion. Focused on further developing technical and leadership skills through challenging and developmental projects. Knowledgeable about mobile and desktop platforms.</p>
+                        
+                        <!-- Tab Titles -->
+                        <div class="tabtitles">
+                            <div class="tablinks" onclick="opentab(event, 'skills')">Skills</div>
+                            <div class="tablinks" onclick="opentab(event, 'education')">Education</div>
+                            <div class="tablinks" onclick="opentab(event, 'experience')">Experience</div>
+                        </div>
+                        
+                        <!-- Tab Contents -->
+                        <div class="tabcontents" id="skills">
+                            <ul>
+                                <li><span>Front-End Development</span><br> Web application development</li>
+                                <li><span>Java Development</span><br> Creating applications with the help of Java</li>
+                                <li><span>UI/UX Designing</span><br> Designing interactive web/app interfaces</li>
+                            </ul>
+                        </div>  
+                        <div class="tabcontents" id="education">
+                            <ul>
+                                <li><span>Manipal Institute of Technology, Bengaluru</span><br> BTech in Computer Science Engineering (currently pursuing) <br>CGPA: 7.69</li>
+                                <li><span>Athena World School, Durg</span><br> High School Education (PCM) <br>Percentage: 80.4%</li>
+                            </ul>
+                        </div>   
+                        <div class="tabcontents" id="experience">
+                            <ul>
+                                <li><span>No prior professional experience.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <h1 class="subtitle">Portfolio</h1>
+
+        <div id="portfolio-section" class="container align-left">
+            <div class="rect-circle-container">
+                <a href="https://drive.google.com/file/d/1B8M66cKGaTli6zXuisHg0NLIEObSiAZX/view?usp=drive_link" target="_blank" class="rect-circle">
+                    <h2>My Resume</h2>
+                </a>
+
+            <div class="rect-circle" onclick="showCertificates()">
+                <h2>My Certificates</h2>
+            </div>
+
+            <!-- Updated My Projects Tab to act like a button -->
+            <div class="rect-circle" onclick="doNothing()">
+                <h2>My Projects</h2>
+            </div>
+        </div>
+        <div id="certificates-list" style="display: none;">
+            <ul>
+                <li><a href="https://coursera.org/share/d1a789359839ae2cc60cdaa602a2abab" target="_blank">Programming with JavaScript</a></li>
+                <li><a href="https://coursera.org/share/37794409d2aaaa812ae0e680dd4d2446" target="_blank">Design Fundamentals</a></li>
+                <li><a href="https://coursera.org/share/e302c7ca5c626a9bd5bd5bd664c42301" target="_blank">Foundations of Coding Front-End</a></li>
+                <li><a href="https://coursera.org/share/54f9bcdcf775394b4752a35a234b3982" target="_blank">Generative AI Content Creation</a></li>
+                <li><a href="https://coursera.org/share/8023a95c5a787e4a4f2632bf0496b948" target="_blank">Digital Systems</a></li>
+                <li><a href="https://coursera.org/share/739c3f8c537a208f20a41591cd554807" target="_blank">Introduction to Java and Object-Oriented Programming</a></li>
+                <li><a href="https://coursera.org/share/d12633a9ef253194e18d4450e07d211c" target="_blank">Principles of UX/UI Design</a></li>
+                <li><a href="https://coursera.org/share/1dd68b0e7c16106b3a1ae98d6904e52c" target="_blank">AI Infrastructure and Operations Fundamentals</a></li>
+                <li><a href="https://coursera.org/share/5017605a3402b73300219b6acbf24906" target="_blank">Ordered Data Structures</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact-section" class="container align-left">
+        <h1 class="subtitle">Contact Me</h1>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ashutosh-singh-thakur-08709a282" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Ash-dj" target="_blank">GitHub</a>
+            <a href="https://x.com/Ash_8E5" target="_blank">X</a>
+            <a href="mailto:ashutosh180308@gmail.com" target="_blank">Email</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tablinks = document.getElementsByClassName("tablinks");
+            var tabcontents = document.getElementsByClassName("tabcontents");
+          
+            function opentab(tabname) {
+              // Hide all tab contents
+              for (var tabcontent of tabcontents) {
+                tabcontent.style.display = "none";
+              }
+          
+              // Remove active class from all tab links
+              for (var tablink of tablinks) {
+                tablink.classList.remove("activelink");
+              }
+          
+              // Show the selected tab content and highlight the active tab
+              document.getElementById(tabname).style.display = "block";
+              document.querySelector(`.tablinks[onclick*="${tabname}"]`).classList.add("activelink");
+            }
+          
+            // Initial state: show the first tab by default
+            opentab("skills");
+          
+            // Attach click event listeners to tab links
+            for (var i = 0; i < tablinks.length; i++) {
+              tablinks[i].addEventListener("click", function () {
+                var tabname = this.getAttribute("onclick").split("'")[1]; // Extract tabname from onclick attribute
+                opentab(tabname);
+              });
+            }
+
+            // Show certificates toggle
+            window.showCertificates = function () {
+                const certificatesList = document.getElementById("certificates-list");
+                certificatesList.style.display = certificatesList.style.display === "none" ? "block" : "none";
+            };
+
+            // Placeholder function for the "Projects" button
+            window.doNothing = function () {
+                // No action for now
+            };
+        });
+    </script>       
+</body>
+</html>
